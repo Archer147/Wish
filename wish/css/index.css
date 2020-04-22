@@ -1,0 +1,643 @@
+#wish{
+    margin:0 auto;
+}
+/*header头部*/
+#header,#banner,#prpmo,#new,#gallery,footer{
+    width: 100%;
+}
+header{
+    height: 1rem;
+    background: #fff ;
+    z-index: 101;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    line-height:1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.54rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /*fixed*/
+    z-index: 99;
+    background: #fff ;
+}
+header .logo{
+    flex: 2;
+}
+header .logo a{
+    font-family: 'Segoe Print', serif;
+    font-size: 0.3rem;
+    display: inline-block;
+    height: 100%;
+    color: #2f2f2f;
+    font-weight: bolder;
+}
+header .nav{
+    flex: 11;
+}
+header .nav ul>li{
+    display: inline-block;
+    float: left;
+    width: 0.9rem;
+}
+header .nav ul>li a{
+    font-size: 0.1rem;
+    color: #2f2f2f;
+    letter-spacing: 0.01rem;
+    font-weight: 600;
+}
+header .nav ul>li a:hover{
+    color: #937c6f;
+    transition: all 0.2s linear;
+}
+header .header-content{
+    flex: 7;
+}
+header .header-content .search{
+    width: 2rem;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+header .header-content .search input {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width:100%;
+    height: 0.4rem;
+    padding-left: 0.1rem;
+    background: #f9f5f5;
+    border: none;
+    outline: none;
+    font-size: 0.1rem;
+}
+header .header-content .search input::placeholder,.menu .menu-header-content>form input::placeholder{
+    font-family:"Segoe Print" ;
+    font-size:0.07rem;
+    color: #999999;
+}
+header .header-content .search .search-btn {
+    position: absolute;
+    left: 1.6rem ;
+    top: 35%;
+    width: 0.3rem;
+    height: 0.3rem;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+header .header-content .search .search-btn img {
+    width: 50%;
+    height: 50%;
+    vertical-align: middle;
+}
+header .header-content .shopping{
+    float: right;
+    width: 1rem;
+   height: 1.2rem;
+}
+header .header-content .shopping a{
+    display: inline-block;
+    float: left;
+}
+header .header-content .shopping a .icon{
+    margin-right: 0.1rem;
+    position: relative;
+}
+header .header-content .shopping a .icon img{
+    width: 0.2rem;
+    height: 0.2rem;
+    vertical-align: middle;
+}
+header .header-content .shopping a .icon .num{
+    position: absolute;
+    top: 0.53rem;
+    left: -0.05rem;
+    width: 0.15rem;
+    height: 0.15rem;
+    background: #937c6f;
+    border-radius: 50%;
+}
+header .header-content .shopping a .icon .num .num_inner{
+    width: 100%;
+    height: 100%;
+}
+header .header-content .shopping a .icon .num .num_inner .cart_num{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 9px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+header .header-menu{
+    flex: 1;
+    height: 1.2rem;
+    background: url(../images/menu.jpg) no-repeat 0.21rem 0.4rem;
+    background-size: 50% 20%;
+}
+header .header-menu:hover{
+    background: url("../images/menu1.png") no-repeat 0.21rem 0.4rem;
+    background-size: 50% 20%;
+}
+/*menu隐藏的菜单*/
+/*  1.vw：1vw等于视口宽度的1%。
+      2.vh：1vh等于视口高度的1%。
+      3.vmin：选取vw和vh中最小的那个。
+      4.vmax：选取vw和vh中最大的那个。*/
+#menu{
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 102;
+    display: none;
+}
+.menu{
+    z-index: 100;
+    position: relative;
+    width: 4rem;
+    height: 100vh;
+    padding-right: 0.6rem;
+    padding-top: 0.87rem;
+    padding-left: 0.5rem;
+    background: #fff;
+    text-align: right;
+    border-left: solid 1px rgba(138, 138, 138, 0.24);
+}
+.menu .close{
+    width: 0.18rem;
+    height:  0.18rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.6rem;
+}
+.menu .close img{
+    width: 100%;
+    height: 100%;
+}
+.menu .close:hover img{
+    background: url("../images/close2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.menu .menu-logo{
+    margin-bottom:0.5rem ;
+}
+.menu .menu-logo a{
+    font-family: 'Lucida', serif;
+    font-size: 0.32rem;
+    color: #2f2f2f;
+    font-weight: bolder;
+}
+.menu .menu-header-content{
+    width: 100%;
+    height: 0.43rem;
+    margin-bottom: 0.6rem;
+}
+.menu .menu-header-content>form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.menu .menu-header-content>form input {
+    width: 100%;
+    height: 100%;
+    background: #f9f5f5;
+    border: none;
+    outline: none;
+    padding-left: 0.2rem;
+}
+.menu .menu-header-content>form .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.43rem;
+    height: 0.43rem;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.menu .menu-header-content>form .search-btn img {
+    width: 50%;
+    height: 50%;
+    vertical-align: middle;
+}
+.menu .menu-nav{
+    width: 100%;
+}
+.menu .menu-nav ul>li{
+    height: 0.2rem;
+    line-height: 0.2rem;
+    margin-bottom: 0.11rem;
+}
+.menu .menu-nav ul>li a{
+    font-size: 0.11rem;
+    color: #2f2f2f;
+    /*字母间距*/
+    letter-spacing: 0.01rem;
+    font-weight: 600;
+}
+.menu .menu-nav ul>li a:hover{
+    color: #937c6f;
+    transition: all 0.2s linear;
+}
+#banner{
+    height: 4rem;
+    margin-top: -7%;
+}
+/*!*banner图*!*/
+.banner{
+    height: 4rem;
+
+}
+.banner .imglist {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.banner .imginfo {
+    width: 100%;
+    height: 100%;
+}
+.banner .imginfo > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+    transition: opacity 0.5s linear;
+}
+.banner .i0 {
+    opacity: 1;
+}
+.banner .imginfo > img:not(.i0) {
+    opacity: 0;
+}
+.banner .btn {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.banner .btn > div {
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    border: 1px solid rgba(138, 138, 138, 0.33);
+    display: inline-block;
+}
+.banner .ck {
+    background: rgba(181, 181, 181, 0.56);
+}
+.banner .banner-title{
+    position: absolute;
+    left: 45%;
+    top: 2.6rem;
+    width: 1.2rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    background: #2f2f2f;
+    color: #fff;
+    font-family: 'Lucida', serif;
+    font-size: 0.15rem;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 2;
+    text-align: center;
+}
+.banner .banner-text{
+    position: absolute;
+    left: 30%;
+    top: 3rem;
+    width: 4.5rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0 4%;
+    background: #937c6f;
+    color: #fff;
+    font-family: 'Lucida', serif;
+    font-size: 0.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 2;
+    text-align: center;
+}
+/*促销*/
+#prpmo{
+    height: 4.8rem;
+    padding-top:0.5rem;
+}
+.prpmo,.new{
+    width: 100%;
+    height: 100%;
+}
+.prpmo .container-fluid .row,.new .container-fluid .row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0.2rem;
+}
+.prpmo .container-fluid .row .title,.new .container-fluid .row .title{
+    flex: 1;
+    font-size: 0.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+    color: #937c6f;
+}
+.prpmo .container-fluid .row .content,.new .container-fluid .row .content{
+    flex: 3;
+    padding-top: 0.1rem;
+    font-size: 0.4rem;
+    font-family: 'Lucida', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    font-weight: bold;
+}
+.prpmo .container-fluid .show>div,.new .container-fluid .show>div{
+    width: 33.3%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 8%;
+}
+.prpmo .container-fluid .show>div .img,.new .container-fluid .show>div .img{
+    flex: 5;
+}
+.prpmo .container-fluid .show>div .img img,.new .container-fluid .show>div .img img{
+    width: 100%;
+    height: 100%;
+}
+.prpmo .container-fluid .show>div  .title{
+    position: absolute;
+    color: #fff;
+    font-size: 0.2rem;
+    top: 40%;
+    right: 8%;
+}
+.prpmo .container-fluid .show>div .content{
+    position: absolute;
+    color: #fff;
+    font-size: 0.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    top: 53%;
+    right: 8%;
+}
+.prpmo .container-fluid .show>.b .title{
+    top: 40%;
+    left: 35%;
+}
+.prpmo .container-fluid .show>.b .content{
+    top: 51%;
+    left: 35%;
+}
+.prpmo .container-fluid .show>.c .title{
+    top: 43%;
+    left: 12%;
+}
+.prpmo .container-fluid .show>.c .content{
+    top: 55%;
+    left: 18%;
+}
+.prpmo .container-fluid .show>div .click{
+    flex: 2;
+    background: antiquewhite;
+    text-align: center;
+}
+.prpmo .container-fluid .show>div .click a{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    display: block;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 0.15rem;
+    font-family: 'Lucida', serif;
+    font-weight: 600;
+}
+.prpmo .container-fluid .show>div .click a:hover{
+    color: #937c6f;
+    font-size: 0.15rem;
+    font-family: 'Lucida', serif;
+    font-weight: 600;
+}
+
+/*new 新品*/
+#new{
+    height:6rem ;
+    clear: both;
+}
+.new .container-fluid .show>div .click{
+    display: flex;
+    flex-direction: column;
+}
+.new .container-fluid .show>div .click .div-star{
+    width: 100%;
+    height: 0.25rem;
+}
+.new .container-fluid .show>div .click .div-star div{
+    width: 0.1rem;
+    height: 0.1rem;
+    margin-right: 0.01rem;
+    float: left;
+}
+.new .container-fluid .show>div .click .div-star div img{
+    width: 100%;
+    height:100%;
+}
+.new .container-fluid .show>div .click .text{
+    width: 100%;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    font-size: 0.13rem;
+    font-weight: 600;
+}
+.new .container-fluid .show>div .click .text a{
+    font-size: 0.13rem;
+}
+.new .container-fluid .show>div .click .text a:hover{
+    color: #937c6f;
+}
+.new .container-fluid .show>div .click .price{
+    width: 100%;
+    height: 0.2rem;
+}
+.new .container-fluid .show>div .click .price p{
+    width: 30%;
+    height: 100%;
+    font-size: 0.18rem;
+    color: #aaaaaa;
+    float: left;
+}
+.new .container-fluid .show>div .click .cart{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.new .container-fluid .show>div .click .cart div{
+    width: 10%;
+    height: 100%;
+}
+.new .container-fluid .show>div .click .cart div:first-of-type{
+    background: #937c6f;
+    margin-left:70%;
+    float: left;
+}
+.new .container-fluid .show>div .click .cart div:first-of-type:hover{
+    background: #000;
+}
+.new .container-fluid .show>div .click .cart div:first-of-type img{
+    width: 90%;
+    height: 100%;
+}
+.new .container-fluid .show>div .click .cart div:last-of-type{
+    height: 100%;
+    line-height: 0.2rem;
+    font-size: 0.1rem;
+    background: #b5b5b5;
+    text-align: center;
+    float: right;
+}
+.new .container-fluid .show>div .click .cart div:last-of-type:hover{
+    background: rgba(0, 0, 0, 0.64);
+}
+/*展览区*/
+#gallery{
+    height: 4rem;
+    clear: both;
+}
+.gallery{
+    padding: 5% 3% 4% ;
+    background: url("../images/gallery.jpg");
+}
+.gallery .container .row .col {
+    height: 50%;
+}
+.gallery .container .row .col>.title{
+    height: 0.4rem;
+}
+.gallery .container .row .col>.title ul{
+    width: 100%;
+    height: 100%;
+    padding: 2% 0 0 20%;
+}
+.gallery .container .row .col>.title ul li {
+    float: left;
+    height: 100%;
+    line-height: 100%;
+}
+.gallery .container .row .col>.title ul li:not(:last-of-type){
+   margin-right: 5%;
+}
+.gallery .container .row .col>.title ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 0.3rem;
+    font-family: 'Lucida', serif;
+    font-weight: 700;
+}
+.gallery .container .row .col>.title ul li a:hover{
+    color: #937c6f;
+}
+.gallery .container .row .col>.text{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #fff;
+}
+.gallery .container .row .col>.submit{
+    text-align: center;
+}
+.gallery .container .row .col>.submit a{
+    margin-top: 3%;
+    margin-left: 40%;
+    display: block;
+    width: 20%;
+    height: 5%;
+    line-height:0.4rem;
+    color: #fff;
+    font-size: 0.1rem;
+    text-transform: uppercase;
+    background: #937c6f;
+    letter-spacing: 0.02rem;
+}
+.gallery .container .row .col>.submit a:hover{
+    color: #fff;
+    background: #8a8a8a;
+}
+.gallery .swiper-container {
+    width: 100%;
+    height:50%;
+    margin-top:4%;
+}
+.gallery .swiper-container .swiper-slide{
+    width: 20%;
+    height: 50%;
+    float: left;
+    margin-right:1%;
+}
+.gallery .swiper-container .swiper-slide a{
+    width: 100%;
+    height: 100%;
+}
+.gallery .swiper-container .swiper-slide a img{
+    width: 100%;
+}
+/*关于我们*/
+footer{
+    margin-top: 0.8rem;
+    height: 0.7rem;
+}
+footer .about-us-top{
+    text-align: center;
+    font-size: 0.2rem;
+  margin-bottom: 0.2rem;
+    height: 0.5rem;
+}
+footer  .about-us-main{
+    width: 100%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    margin-bottom: 0.1rem;
+}
+footer .about-us-main ul{
+    height: 100%;
+    padding-left: 9%;
+
+}
+footer .about-us-main ul li{
+    width: 15%;
+    font-size: 0.11rem;
+    float: left;
+    margin-right: 1%;
+    text-align: center;
+    letter-spacing: 0.01rem;
+}
+footer .about-us-main ul li a:hover{
+    color: #937c6f;
+}
+footer .about-us-bottom{
+    text-align: center;
+    height: 0.2rem;
+    line-height: 0.2rem;
+}
+footer .about-us-bottom p{
+    height: 100%;
+}
+footer .about-us-bottom p a{
+    color: #3c77aa;
+}footer .about-us-bottom p a:hover{
+    color: #937c6f;
+}

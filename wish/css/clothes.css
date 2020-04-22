@@ -1,0 +1,135 @@
+#home,#kind{
+    width: 100%;
+}
+/*!*banner图*!*/
+#home{
+    height: 2.5rem;
+    clear: both;
+    margin-bottom: 0.3rem;
+}
+.home{
+    height: 100%;
+}
+.home .imglist {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.home .imginfo {
+    width: 100%;
+    height: 100%;
+}
+.home .imginfo > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+    transition: opacity 0.5s linear;
+}
+.home .banner-title{
+    position: absolute;
+    left: 4%;
+    top: 2rem;
+    width: 1.2rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: #fff;
+    font-family: 'Lucida', serif;
+    font-size: 0.3rem;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 2;
+    text-align: center;
+}
+.home .banner-text{
+    position: absolute;
+    top: 2.1rem;
+    width: 3.5rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0 4%;
+    color: #fff;
+    font-family: 'Lucida', serif;
+    font-size: 0.15rem;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 2;
+    text-align: center;
+}
+.home .banner-text a{
+    color: #fff;
+}.home .banner-text a:hover{
+     color: #937c6f;
+ }
+/*种类*/
+#kind{
+    margin-bottom: 0.5rem;
+}
+.kind .row>div{
+    height: 2rem;
+    margin:3% 0;
+    border: solid 1px rgba(170, 170, 170, 0.25);
+    padding: 0;
+}
+.kind .row>div:hover,.kind .row>div:hover dl dt,.kind .row>div:hover dl dd{
+    border-color:rgba(147, 124, 111, 0.49);
+}
+.kind .row>div:hover dl dt{
+    background: rgba(147, 124, 111, 0.49);
+}
+.kind .row>div dl{
+    height: 100%;
+
+}
+.kind .row>div dl dt{
+    padding: 0;
+    background: rgba(138, 138, 138, 0.37);
+    height: 20%;
+    border-bottom: solid 1px rgba(170, 170, 170, 0.25);
+    font-size:0.18rem ;
+    color: #2f2f2f;
+    line-height: 0.4rem;
+    padding-left: 5%;
+}
+.kind .row>div dl dd{
+    height: 20%;
+    border-bottom: solid 1px rgba(170, 170, 170, 0.25);
+    font-size:0.12rem ;
+    color: rgba(35, 35, 35, 0.56);
+    line-height: 0.4rem;
+    padding-left: 5%;
+}
+.kind .row>div dl dd span{
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin-right: 0.1rem;
+}
+.kind .row>div dl dd a:hover{
+    color: #937c6f;
+}
+.kind .row>div:last-child input[type="range"]{
+    width: 80%;
+    height: 10%;
+    margin: 5% 0  3% 10%;
+}
+.kind .row>div:last-child input[type="submit"]{
+    width: 30%;
+    height: 15%;
+    font-size: 0.15rem;
+    color: #fff;
+    background: #937c6f;
+    margin-left: 35%;
+    border-radius: 1%;
+    outline:none ;
+    border:none;
+}
+.kind .row>div:last-child input[type="submit"]:hover{
+    color: #232323;
+    background: rgba(138, 138, 138, 0.56);
+}
+.kind .row>div:last-child p{
+   font-size: 0.15rem;
+    text-align: center;
+}
+

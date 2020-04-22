@@ -1,0 +1,142 @@
+
+/*媒体查询*/
+@media (max-width:1300px) {
+    header .nav ul > li {
+        width: 1.1rem;
+    }
+
+    header .header-content {
+        flex: 3;
+    }
+
+    header .header-content .search {
+        display: none;
+    }
+
+    header .header-content .shopping {
+        width: 100%;
+    }
+}
+@media (max-width:975px) {
+    header .logo a{
+        float: left;
+        margin-left: 0.3rem;
+    }
+    header .nav{
+        display: none;
+    }
+    header .header-content{
+        flex: 1;
+        padding-left: 20%;
+    }
+    header .header-menu{
+        flex: 0.5;
+        background-size: 30% 20%;
+    }
+    header .header-menu:hover{
+        background-size: 30% 20%;
+    }
+    .banner .banner-title{
+        left: 45%;
+    }
+    .banner .banner-text{
+        left: 25%;
+    }
+    .new .container-fluid .show>div .click .cart div{
+        width: 13%;
+    }
+    #prpmo {
+        height: 4rem;
+    }
+    #new {
+        height: 4.8rem;
+    }
+    .gallery .container .row .col>.title ul li a{
+        font-size: 0.23rem;
+    }
+    .gallery .container .row .col>.text{
+        font-size: 0.11rem;
+    }
+    .gallery .container .row .col>.submit a{
+        margin-left: 38%;
+    }
+    .prpmo .container-fluid .show>div,.new .container-fluid .show>div{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:760px) {
+    header .header-content .shopping {
+        padding-left: 0;
+    }
+    .banner .banner-title{
+        left: 45%;
+    }
+    .banner .banner-text{
+        left: 25%;
+    }
+    footer{
+        margin-top: 0.6rem;
+    }
+    footer .about-us-top{
+        font-size: 0.18rem;
+    }
+    footer .about-us-main ul li{
+        font-size: 0.07rem;
+    }
+}
+
+@media (max-width:600px) {
+    header {
+        height: 70px;
+    }
+
+    .banner .banner-title {
+        left: 43%;
+        width: 1.2rem;
+        font-size: 0.1rem;
+    }
+
+    .banner .banner-text {
+        left: 28%;
+        width: 3rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        font-size: 0.3rem;
+    }
+    #prpmo {
+        height: 3.6rem;
+    }
+    .gallery .container .row .col>.title ul{
+        padding-left: 13%;
+    }
+    .gallery .container .row .col>.title ul li a{
+        font-size: 0.2rem;
+    }
+    .gallery .container .row .col>.text{
+        font-size: 0.04rem;
+    }
+    footer{
+           margin-top:0;
+       }
+    footer .about-us-main ul{
+        padding-left: 3%;
+    }
+
+    footer .about-us-main ul li{
+        width: 100%;
+        text-align:center;
+        font-size: 0.07rem;
+    }
+    .home .banner-title{
+        left: 2%;
+        font-size: 0.2rem;
+    }
+    .home .banner-text{
+        width: 2.8rem;
+        font-size: 0.1rem;
+    }
+
+}
+
